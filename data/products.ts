@@ -27,6 +27,15 @@ export const products: Product[] = [
     currency: 'USD',
     monthlySeries: [6000, 5600, 5200, 5100, 5000, 4700, 4600, 4500, 4400, 4550, 4600, 4650],
     website: '#'
+  },
+  {
+    slug: 'simply',
+    name: 'Simply',
+    tagline: 'House device integration made simple',
+    mrr: 21000,
+    currency: 'USD',
+    monthlySeries: [7000, 5600, 5200, 5100, 4800, 4700, 4600, 4500, 4400, 4550, 4600, 4650],
+    website: '#'
   }
 ]
 

@@ -11,7 +11,7 @@ export function ProfileSidebar() {
       </div>
       <div className="space-y-6 flex-1">
         <div className="space-y-3">
-          <h1 className="text-5xl font-bold leading-tight text-gray-900">Fortune04</h1>
+          <h1 className="text-5xl font-bold leading-tight text-gray-900">Ali</h1>
           <div className="flex flex-wrap gap-4 text-base text-gray-700">
             <div className="flex items-center gap-1.5">📍 Malaysia</div>
             <div className="flex items-center gap-1.5">💰 {formatMRR(totalMrr)}</div>

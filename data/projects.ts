@@ -9,29 +9,27 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: 'focus-tracker',
-    name: 'Focus Tracker',
-    description: 'A minimalist app to track deep work sessions and visualize focus trends over time.',
-    website: 'https://example.com',
-    repo: 'https://github.com/example/focus-tracker',
-    tags: ['Next.js', 'Tailwind', 'Productivity']
+    slug: 'nextlife',
+    name: 'NextLife',
+    description: 'A modern financial tracking application for managing personal finances and budgeting in the digital age.',
+    tags: ['Next.js', 'TypeScript', 'Finance']
   },
   {
-    slug: 'api-saas-starter',
-    name: 'API SaaS Starter',
-    description: 'Starter kit for building a subscription-based JSON API with authentication & billing.',
-    tags: ['Node', 'Stripe', 'Prisma']
+    slug: 'affly',
+    name: 'Affly',
+    description: 'An affiliate marketing platform that simplifies link management, tracking, and performance analytics.',
+    tags: ['React', 'Node.js', 'Marketing']
   },
   {
-    slug: 'site-analytics',
-    name: 'Site Analytics',
-    description: 'Lightweight privacy-friendly analytics dashboard for static sites.',
-    tags: ['Edge', 'Analytics', 'TypeScript']
+    slug: 'sbot',
+    name: 'SBot',
+    description: 'An intelligent chatbot powered by AI for automating conversations and customer support workflows.',
+    tags: ['AI', 'Python', 'Chatbot']
   },
   {
-    slug: 'automation-cli',
-    name: 'Automation CLI',
-    description: 'Command-line tool to script common indie hacking tasks like deploying & tweeting releases.',
-    tags: ['CLI', 'Productivity']
+    slug: 'lumi',
+    name: 'Lumi',
+    description: 'A smart home device integration platform that makes controlling and automating your home effortless.',
+    tags: ['IoT', 'React', 'Smart Home']
   }
 ]

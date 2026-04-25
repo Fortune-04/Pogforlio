@@ -12,7 +12,21 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif']
-      }
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-out forwards',
+        'slide-up': 'slideUp 0.5s ease-out forwards',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { opacity: '0', transform: 'translateY(20px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+      },
     }
   },
   plugins: [daisyui],
@@ -20,19 +34,22 @@ const config: Config = {
     themes: [
       {
         portfoolio: {
-          'primary': '#2563eb',
+          'primary': '#6366f1',
           'primary-content': '#ffffff',
-          'secondary': '#9333ea',
+          'secondary': '#a855f7',
           'secondary-content': '#ffffff',
-          'accent': '#f59e0b',
-          'neutral': '#374151',
-          'base-100': '#e8e8e8',
-          'base-200': '#d1d1d1',
-          'base-300': '#b8b8b8',
-          'info': '#0ea5e9',
-          'success': '#10b981',
-          'warning': '#f59e0b',
-          'error': '#ef4444'
+          'accent': '#22d3ee',
+          'accent-content': '#000000',
+          'neutral': '#1e1e2e',
+          'neutral-content': '#cdd6f4',
+          'base-100': '#0f0f17',
+          'base-200': '#181825',
+          'base-300': '#1e1e2e',
+          'base-content': '#cdd6f4',
+          'info': '#89b4fa',
+          'success': '#a6e3a1',
+          'warning': '#f9e2af',
+          'error': '#f38ba8'
         }
       }
     ],

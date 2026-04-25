@@ -1,17 +1,19 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'Portfoolio – Creative Builder',
-    template: '%s | Portfoolio'
+    default: 'Ali – Portfolio',
+    template: '%s | Ali'
   },
-  description: 'Personal portfolio showcasing projects, writing, and uses.',
+  description: 'Personal portfolio showcasing projects, writing, and tools.',
   openGraph: {
-    title: 'Portfoolio',
-    description: 'Projects, writing, and tools I use.',
+    title: 'Ali – Portfolio',
+    description: 'Projects, writing, and tools I build.',
     url: 'https://example.com',
-    siteName: 'Portfoolio',
+    siteName: 'Ali',
     locale: 'en_US',
     type: 'website'
   },
@@ -22,7 +24,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" data-theme="portfoolio" className="font-sans">
       <body className="min-h-screen flex flex-col bg-base-100 text-base-content">
-        <main className="flex-1 container mx-auto px-4 py-8">{children}</main>
+        <Navbar />
+        <main className="flex-1">{children}</main>
+        <Footer />
       </body>
     </html>
   )
